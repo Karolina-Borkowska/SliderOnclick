@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"
+        integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <title>Document</title>
+</head>
+
+<body>
+
+    <div class="wrapp">
+
+        <div class="box">
+
+        <div></div>
+        <div class="active"></div>
+        <div class="active2"></div>
+
+        <button class="firstBtn">first</button>
+        <button class="secondBtn">second</button>
+        <button class="closeBtn">close</button>
+        
+        </div>
+    </div>
+
+
+    <script>
+
+    const btn1 = document.querySelector('.firstBtn')
+    const text = document.querySelector('.active')
+    
+
+    btn1.addEventListener('click' , function () {
+        text.classList.add('one')
+        text2.classList.remove('two')
+       
+    })
+
+    const btn2 = document.querySelector('.secondBtn')
+    const text2 = document.querySelector('.active2')
+
+    btn2.addEventListener('click' , function () {
+        text2.classList.add('two')
+        text2.classList.remove('one')
+       
+    })
+
+    const btn3 = document.querySelector('.closeBtn')
+
+    btn3.addEventListener('click' , function () {
+        text2.classList.remove('two')
+        text.classList.remove('one')
+       
+    })
+
+
+
+    </script>
+
+</body>
+
+</html>
